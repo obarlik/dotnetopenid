@@ -94,7 +94,7 @@ namespace DotNetOpenAuth.OpenId.Provider {
 		/// Gets the original request message.
 		/// </summary>
 		/// <value>This may be null in the case of an unrecognizable message.</value>
-		protected new SignedResponseRequest RequestMessage {
+		public new SignedResponseRequest RequestMessage {
 			get { return (SignedResponseRequest)base.RequestMessage; }
 		}
 

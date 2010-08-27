@@ -171,7 +171,7 @@ namespace DotNetOpenAuth.OpenId.Provider {
 		/// <summary>
 		/// Gets the original request message.
 		/// </summary>
-		protected new CheckIdRequest RequestMessage {
+		public new CheckIdRequest RequestMessage {
 			get { return (CheckIdRequest)base.RequestMessage; }
 		}
 

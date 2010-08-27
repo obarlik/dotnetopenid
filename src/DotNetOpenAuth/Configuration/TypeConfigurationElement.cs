@@ -120,7 +120,8 @@ namespace DotNetOpenAuth.Configuration {
 		/// be present.
 		/// </remarks>
 		private static T CreateInstanceFromXaml(Stream xaml) {
-			return (T)XamlReader.Load(xaml);
+			throw new NotImplementedException ();
+			//return (T)XamlReader.Load(xaml);
 		}
 	}
 }

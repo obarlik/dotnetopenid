@@ -172,6 +172,8 @@ namespace DotNetOpenAuth.OpenId.ChannelElements {
 			returnToParameters.Remove(ReturnToSignatureParameterName);
 			var sortedReturnToParameters = new SortedDictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 			foreach (string key in returnToParameters) {
+				if (key == null)
+					continue;
 				sortedReturnToParameters.Add(key, returnToParameters[key]);
 			}
 
